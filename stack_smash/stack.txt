@@ -1,0 +1,65 @@
+
+
+
+
+
+
+
+
+
+
+{
+char ch;                          
+int i;
+}
+
+type something = packed record
+ch: char;
+i: integer;
+end;
+
+                             sub $8, %esp
+ch  - char 1 byte
+      padding 1 byte
+      padding 1 byte
+      padding 1 byte
+i     4 bytes
+i
+i
+i
+
+
+
+
+
+
+
+arg2  - int
+padding - int
+arg1
+RET
+OLD EBP    <----- EBP
+padding
+local var1    -16(EBP)
+padding
+local var2
+local var3 
+local newvar    
+local anothervar  <-----ESP
+
+8(%esp)
+-4(%ebp)
+
+push %ebp
+mov %esp, %ebp
+sub $8, %esp
+
+
+
+
+
+foo(arg1, arg2, arg3)     push arg3
+                          push arg2
+                          push arg1
+                          call foo
+                          add

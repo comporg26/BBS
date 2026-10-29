@@ -1,10 +1,8 @@
 # One Byte at a Time: How x86 Grew From 16 to 64 Bits Without Breaking Anything
 
-*A student-friendly deep dive into x86 instruction encoding, and how the same 256 one-byte opcodes survived two major transitions: 16→32 bit (80386) and 32→64 bit (AMD64). Ready to convert to PDF.*
-
 ---
 
-## 1. The Puzzle
+## 1. The Question
 
 On x86-64, some instructions are only one byte long:
 
